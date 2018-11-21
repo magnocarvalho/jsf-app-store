@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.xstoremodels.Livro;
+import br.com.xstore.Livro;
 
 public class LivroDao {
 

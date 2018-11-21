@@ -7,8 +7,8 @@ import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 
 import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstoremodels.Livro;
-xstore
+import br.com.xstore.Livro;
+xstorexstore
 @Model
 public class AdminListaLivrosBean {
 
