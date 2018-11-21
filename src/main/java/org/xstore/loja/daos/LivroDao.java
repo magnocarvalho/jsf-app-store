@@ -1,17 +1,28 @@
-package org.xstore.loja.daos;
+package br.com.xstore.loja.daos;
 
-import javax.persistente.EntityManager;
-
-import org.xstore.loja.models.Livro;
-
+import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
+import br.com.xstore.loja.models.Livro;
 
 public class LivroDao {
 
-    @PersistenceContext
-    private EntityManager manager;
-    
-    public void salvar(Livro livro) {
-        manager.persist(livro);
-    }
+	@PersistenceContext
+	private EntityManager manager;
+	
+	public void salvar(Livro livro) {
+		manager.persist(livro);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+

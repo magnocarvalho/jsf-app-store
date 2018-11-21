@@ -1,23 +1,34 @@
-package org.xstore.loja.beans;
-import javax.inject.Named;
+package br.com.xstore.loja.beans;
+
 import javax.enterprise.context.RequestScoped;
-import org.xstore.loja.models.Livro;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.transaction.Transactional;
+
+import br.com.xstore.loja.daos.LivroDao;
+import br.com.xstore.loja.models.Livro;
 
 @Named
 @RequestScoped
 public class AdminLivrosBean {
+	
+	private Livro livro = new Livro();
+	
+	@Inject
+	private LivroDao dao;
 
-    private Livro livro = new Livro();
+	@Transactional
+	public void salvar() {
+		dao.salvar(livro);
+		System.out.println("Livro Cadastrado: " + livro);
+	}
 
-    public void salva() {
-        System.out.println("Livro cadastrado: " + livro);
-    }
+	public Livro getLivro() {
+		return livro;
+	}
 
-    public Livro getLivro() {
-        return livro;
-    }
-
-    public void setLivro(Livro livro) {
-        this.livro = livro;
-    }
+	public void setLivro(Livro livro) {
+		this.livro = livro;
+	}
+	
 }
