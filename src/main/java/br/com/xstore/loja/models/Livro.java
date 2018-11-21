@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.models;
+package br.com.xstore.loja.models;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -42,6 +42,8 @@ public class Livro {
 	
 	@Temporal(TemporalType.DATE)
 	private Calendar dataPublicacao;
+	
+	private String capaPath;
 	
 	@ManyToMany
 	@Size(min=1)
@@ -89,6 +91,12 @@ public class Livro {
 	}
 	public void setDataPublicacao(Calendar dataPublicacao) {
 		this.dataPublicacao = dataPublicacao;
+	}
+	public String getCapaPath() {
+		return capaPath;
+	}
+	public void setCapaPath(String capaPath) {
+		this.capaPath = capaPath;
 	}
 
 	
