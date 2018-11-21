@@ -1,19 +1,22 @@
 package br.com.xstore.loja.beans;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.Part;
 import javax.transaction.Transactional;
 
 import br.com.xstore.loja.daos.AutorDao;
 import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstoremodels.Autor;
-import br.com.xstoremodels.Livro;
-xstore
-@Namedxstore
+import br.com.xstore.loja.infra.FileSaver;
+import br.com.xstore.loja.models.Autor;
+import br.com.xstore.loja.models.Livro;
+
+@Named
 @RequestScoped
 public class AdminLivrosBean {
 	
@@ -23,17 +26,22 @@ public class AdminLivrosBean {
 	private LivroDao dao;
 	@Inject
 	private AutorDao autorDao;
+	@Inject
+	private FacesContext context; 
 	
-	private List<Integer> autoresId = new ArrayList<>();
-
-
+	private Part capaLivro;
+	
 	@Transactional
 	public String salvar() {
-		for (Integer autorId : autoresId) {
-			livro.getAutores().add(new Autor(autorId));
-		}
+		FileSaver fileSaver = new FileSaver();
+		String capaPath = fileSaver.write(capaLivro, "livros");
+		livro.setCapaPath(capaPath);
 		dao.salvar(livro);
-		System.out.println("Livro Cadastrado: " + livro);
+		
+		context.getExternalContext()
+			.getFlash().setKeepMessages(true);
+		context
+			.addMessage(null, new FacesMessage("Livro cadastrado com sucesso!"));
 		
 		return "/livros/lista?faces-redirect=true";
 	}
@@ -50,12 +58,12 @@ public class AdminLivrosBean {
 		this.livro = livro;
 	}
 
-	public List<Integer> getAutoresId() {
-		return autoresId;
+	public Part getCapaLivro() {
+		return capaLivro;
 	}
 
-	public void setAutoresId(List<Integer> autoresId) {
-		this.autoresId = autoresId;
+	public void setCapaLivro(Part capaLivro) {
+		this.capaLivro = capaLivro;
 	}
-	
+
 }
