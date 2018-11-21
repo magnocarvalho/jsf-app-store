@@ -10,10 +10,10 @@ import javax.transaction.Transactional;
 
 import br.com.xstore.loja.daos.AutorDao;
 import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstore.loja.models.Autor;
-import br.com.xstore.loja.models.Livro;
-
-@Named
+import br.com.xstoremodels.Autor;
+import br.com.xstoremodels.Livro;
+xstore
+@Namedxstore
 @RequestScoped
 public class AdminLivrosBean {
 	
