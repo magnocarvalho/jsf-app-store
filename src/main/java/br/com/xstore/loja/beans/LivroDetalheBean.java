@@ -1,6 +1,5 @@
 package br.com.xstore.loja.beans;
 
-import javax.ejb.Stateful;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 
