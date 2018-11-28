@@ -7,12 +7,10 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.servlet.http.Part;
 import javax.transaction.Transactional;
 
 import br.com.xstore.loja.daos.AutorDao;
 import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstore.loja.infra.FileSaver;
 import br.com.xstore.loja.models.Autor;
 import br.com.xstore.loja.models.Livro;
 
@@ -29,13 +27,8 @@ public class AdminLivrosBean {
 	@Inject
 	private FacesContext context; 
 	
-	private Part capaLivro;
-	
 	@Transactional
 	public String salvar() {
-		FileSaver fileSaver = new FileSaver();
-		String capaPath = fileSaver.write(capaLivro, "livros");
-		livro.setCapaPath(capaPath);
 		dao.salvar(livro);
 		
 		context.getExternalContext()
@@ -56,14 +49,6 @@ public class AdminLivrosBean {
 
 	public void setLivro(Livro livro) {
 		this.livro = livro;
-	}
-
-	public Part getCapaLivro() {
-		return capaLivro;
-	}
-
-	public void setCapaLivro(Part capaLivro) {
-		this.capaLivro = capaLivro;
 	}
 
 }
