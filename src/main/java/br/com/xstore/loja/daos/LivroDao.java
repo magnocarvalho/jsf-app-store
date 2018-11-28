@@ -9,7 +9,7 @@ import br.com.xstore.loja.models.Livro;
 
 public class Lxstore
 
-	@PersistenceContext
+	@PersistenceCxstore
 	private EntityManager manager;
 	
 	public void salvar(Livro livro) {
