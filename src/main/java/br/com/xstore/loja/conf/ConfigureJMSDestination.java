@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.conf;
+package br.com.xstore.loja.conf;
 
 import javax.ejb.Singleton;
 import javax.jms.JMSDestinationDefinition;

@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.models;
+package br.com.xstore.loja.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

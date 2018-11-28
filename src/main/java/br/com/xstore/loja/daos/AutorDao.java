@@ -1,11 +1,11 @@
-package br.com.casadocodigo.loja.daos;
+package br.com.xstore.loja.daos;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.casadocodigo.loja.models.Autor;
+import br.com.xstore.Autor;
 
 public class AutorDao {
 

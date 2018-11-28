@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
   Array.prototype.filter.call(
     document.querySelectorAll('a[href^="http"]:not(.dont-track)'),
     function(element) {
-      var ccb = element.href.indexOf("casadocodigo.com.br");
+      var ccb = element.href.indexOf("xstore.com.br");
       if (ccb == -1) {
         ccb = element.href.indexOf("localhost");
       }

@@ -1,10 +1,11 @@
-package br.com.casadocodigo.loja.beans;
+package br.com.xstore.loja.beans;
 
+import javax.ejb.Stateful;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
-
-import br.com.casadocodigo.loja.daos.LivroDao;
-import br.com.casadocodigo.loja.models.Livro;
+xstorexstore
+import br.com.xstoreivroDao;
+import br.com.xstore.loja.models.Livro;
 
 @Model
 public class LivroDetalheBean {

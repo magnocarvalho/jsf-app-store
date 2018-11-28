@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.resources;
+package br.com.xstore.loja.resources;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import javax.ws.rs.core.MediaType;
 
 import org.jboss.resteasy.annotations.providers.jaxb.Wrapped;
 
-import br.com.casadocodigo.loja.daos.LivroDao;
-import br.com.casadocodigo.loja.models.Livro;
+import br.com.xstore.loja.daos.LivroDao;
+import br.com.xstore.loja.models.Livro;
 
 @Path("livros")
 @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })

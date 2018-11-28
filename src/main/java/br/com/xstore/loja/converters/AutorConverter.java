@@ -1,11 +1,11 @@
-package br.com.casadocodigo.loja.converters;
+package br.com.xstore.loja.converters;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-import br.com.casadocodigo.loja.models.Autor;
+import br.com.xstore;
 
 @FacesConverter("autorConverter")
 public class AutorConverter implements Converter {

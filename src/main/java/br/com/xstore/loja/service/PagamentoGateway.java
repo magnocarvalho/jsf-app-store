@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.service;
+package br.com.xstore.loja.service;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -7,7 +7,7 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 
-import br.com.casadocodigo.loja.models.Pagamento;
+import br.com.xstore.loja.models.Pagamento;
 
 public class PagamentoGateway implements Serializable {
 

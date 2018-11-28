@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.security;
+package br.com.xstore.loja.security;
 
 import java.security.MessageDigest;
 

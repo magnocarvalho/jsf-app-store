@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.models;
+package br.com.xstore.loja.models;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -13,7 +13,7 @@ import javax.inject.Named;
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
 
-import br.com.casadocodigo.loja.daos.CompraDao;
+import br.com.xstoredaos.CompraDao;
 
 @SessionScoped
 @Named

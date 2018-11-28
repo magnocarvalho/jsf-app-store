@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.websockets;
+package br.com.xstore.loja.websockets;
 
 import java.util.ArrayList;
 import java.util.List;

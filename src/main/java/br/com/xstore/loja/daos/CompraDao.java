@@ -1,11 +1,11 @@
-package br.com.casadocodigo.loja.daos;
+package br.com.xstore.loja.daos;
 
 import java.io.Serializable;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.casadocodigo.loja.models.Compra;
+import br.com.xstoremodels.Compra;
 
 public class CompraDao implements Serializable {
 

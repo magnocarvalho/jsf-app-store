@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.security;
+package br.com.xstore.loja.security;
 
 import java.security.Principal;
 
@@ -7,8 +7,8 @@ import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
-import br.com.casadocodigo.loja.daos.SecurityDao;
-import br.com.casadocodigo.loja.models.SystemUser;
+import br.com.xstore.loja.daos.SecurityDao;
+import br.com.xstore.loja.models.SystemUser;
 
 @Model
 public class CurrentUser {

@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.service;
+package br.com.xstore.loja.service;
 
 import java.net.URI;
 import java.util.concurrent.ExecutorService;
@@ -20,8 +20,8 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 
-import br.com.casadocodigo.loja.daos.CompraDao;
-import br.com.casadocodigo.loja.models.Compra;
+import br.com.xstore.loja.daos.CompraDao;
+import br.com.xstore.loja.models.Compra;
 
 @Path("/pagamento")
 public class PagamentoService {

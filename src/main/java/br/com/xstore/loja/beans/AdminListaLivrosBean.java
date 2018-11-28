@@ -1,17 +1,18 @@
-package br.com.casadocodigo.loja.beans;
+package br.com.xstore.loja.beans;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.enterprise.inject.Model;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
-
-import br.com.casadocodigo.loja.daos.LivroDao;
-import br.com.casadocodigo.loja.models.Livro;
+xstorexstore
+import br.com.xstoreo;
+import br.com.xstoremodels.Livro;
 
 @Model
 public class AdminListaLivrosBean {
-	
+
 	@Inject
 	private LivroDao dao;
 	
@@ -24,3 +25,13 @@ public class AdminListaLivrosBean {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+

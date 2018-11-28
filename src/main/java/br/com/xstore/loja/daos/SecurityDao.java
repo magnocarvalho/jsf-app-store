@@ -1,9 +1,9 @@
-package br.com.casadocodigo.loja.daos;
+package br.com.xstore.loja.daos;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.casadocodigo.loja.models.SystemUser;
+import br.com.xstore.loja.models.SystemUser;
 
 public class SecurityDao {
 

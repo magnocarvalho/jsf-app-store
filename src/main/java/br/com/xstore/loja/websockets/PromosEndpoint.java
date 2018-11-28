@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.websockets;
+package br.com.xstore.loja.websockets;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,7 +10,7 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-import br.com.casadocodigo.loja.models.Promo;
+import br.com.xstore.loja.models.Promo;
 
 @ServerEndpoint(value = "/canal/promos")
 public class PromosEndpoint {

@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.beans;
+package br.com.xstore.loja.beans;
 
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
@@ -6,9 +6,9 @@ import javax.inject.Inject;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 
-import br.com.casadocodigo.loja.models.CarrinhoCompra;
-import br.com.casadocodigo.loja.models.Compra;
-import br.com.casadocodigo.loja.models.Usuario;
+import br.com.xstoremodels.CarrinhoCompra;
+import br.com.xstoremodels.Compra;
+import br.com.xstoremodels.Usuario;
 
 @Model
 public class CheckoutBean {
