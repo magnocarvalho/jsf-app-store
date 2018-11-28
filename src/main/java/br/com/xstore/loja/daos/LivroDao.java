@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import br.com.xstore.loja.models.Livro;
 
-public class LivroDao {
+public class Lxstore
 
 	@PersistenceContext
 	private EntityManager manager;
