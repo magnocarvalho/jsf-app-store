@@ -1,14 +1,14 @@
 package br.com.xstore.loja.beans;
 
+import br.com.xstore.loja.daos.LivroDao;
+import br.com.xstore.loja.models.CarrinhoCompra;
+import br.com.xstore.loja.models.CarrinhoItem;
+import br.com.xstore.loja.models.Livro;
 import java.util.List;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 
-import br.com.xstoredaos.LivroDao;
-import br.com.xstoremodels.CarrinhoCompra;
-import br.com.xstoremodels.CarrinhoItem;
-import br.com.xstoremodels.Livro;
 
 @Model
 public class CarrinhoComprasBean {
@@ -21,7 +21,7 @@ public class CarrinhoComprasBean {
 
 	public String add(Integer id) {
 		Livro livro = livroDao.buscarPorId(id);
-		CarrinhoItem item = new CarrinhoItem(livro);
+		          CarrinhoItem item = new CarrinhoItem(livro);
 		carrinho.add(item);
 
 		return "carrinho?faces-redirect=true";

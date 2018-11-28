@@ -1,14 +1,15 @@
 package br.com.xstore.loja.beans;
 
+import br.com.xstore.loja.models.CarrinhoCompra;
+import br.com.xstore.loja.models.Compra;
+import br.com.xstore.loja.models.Usuario;
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 
-import br.com.xstoremodels.CarrinhoCompra;
-import br.com.xstoremodels.Compra;
-import br.com.xstoremodels.Usuario;
+
 
 @Model
 public class CheckoutBean {

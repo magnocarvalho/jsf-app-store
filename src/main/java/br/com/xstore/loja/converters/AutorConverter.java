@@ -1,11 +1,11 @@
 package br.com.xstore.loja.converters;
 
+import br.com.xstore.loja.models.Autor;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-import br.com.xstore;
 
 @FacesConverter("autorConverter")
 public class AutorConverter implements Converter {

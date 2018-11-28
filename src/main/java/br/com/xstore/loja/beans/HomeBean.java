@@ -1,12 +1,11 @@
 package br.com.xstore.loja.beans;
 
+import br.com.xstore.loja.daos.LivroDao;
 import java.util.List;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
-
-import br.com.xstoreivroDao;
-import br.com.xstore.Livro;
+import br.com.xstore.loja.models.Livro;
 
 @Model
 public class HomeBean {

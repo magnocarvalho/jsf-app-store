@@ -1,5 +1,6 @@
 package br.com.xstore.loja.models;
 
+import br.com.xstore.loja.daos.CompraDao;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -12,8 +13,6 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
-
-import br.com.xstoredaos.CompraDao;
 
 @SessionScoped
 @Named

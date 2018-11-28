@@ -5,7 +5,7 @@ import java.io.Serializable;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.xstoremodels.Compra;
+import br.com.xstore.loja.models.Compra;
 
 public class CompraDao implements Serializable {
 
