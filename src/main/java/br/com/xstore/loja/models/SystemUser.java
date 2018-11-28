@@ -1,22 +1,31 @@
 package br.com.casadocodigo.loja.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+import org.hibernate.validator.constraints.Email;
 
 @Entity
-public class Usuario {
+public class SystemUser {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	private String nome;
-	
+	@Email
 	private String email;
 	
 	private String senha;
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	private List<SystemRole> roles = new ArrayList<>();
 
 	public Integer getId() {
 		return id;
@@ -24,14 +33,6 @@ public class Usuario {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	public String getEmail() {

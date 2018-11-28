@@ -1,4 +1,4 @@
-package br.com.xstore.loja.infra;
+package br.com.casadocodigo.loja.infra;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,7 +14,7 @@ import javax.servlet.http.Part;
 
 public class FileSaver {
 
-	public static final String SERVER_PATH = "/xstore
+	public static final String SERVER_PATH = "/casadocodigo";
 	
 	public String write(Part arquivo, String path) {
 		String relativePath = path + "/" + arquivo.getSubmittedFileName();
@@ -47,9 +47,6 @@ public class FileSaver {
 			throw new RuntimeException(e); 
 		}
 	}
-
-	
-	
 }
 
 

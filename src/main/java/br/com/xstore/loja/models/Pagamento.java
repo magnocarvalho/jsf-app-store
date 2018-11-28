@@ -1,4 +1,4 @@
-package br.com.xstore.loja.models;
+package br.com.casadocodigo.loja.models;
 
 import java.math.BigDecimal;
 

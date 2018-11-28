@@ -1,4 +1,4 @@
-package br.com.xstore.loja.beans;
+package br.com.casadocodigo.loja.beans;
 
 import java.util.List;
 
@@ -10,11 +10,11 @@ import javax.inject.Named;
 import javax.servlet.http.Part;
 import javax.transaction.Transactional;
 
-import br.com.xstoredaos.AutorDao;
-import br.com.xstoredaos.LivroDao;
-import br.com.xstoreinfra.FileSaver;
-import br.com.xstoremodels.Autor;
-import br.com.xstoremodels.Livro;
+import br.com.casadocodigo.loja.daos.AutorDao;
+import br.com.casadocodigo.loja.daos.LivroDao;
+import br.com.casadocodigo.loja.infra.FileSaver;
+import br.com.casadocodigo.loja.models.Autor;
+import br.com.casadocodigo.loja.models.Livro;
 
 @Named
 @RequestScoped

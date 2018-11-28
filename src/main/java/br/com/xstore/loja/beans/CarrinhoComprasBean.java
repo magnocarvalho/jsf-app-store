@@ -1,14 +1,14 @@
-package br.com.xstore.loja.beans;
+package br.com.casadocodigo.loja.beans;
 
 import java.util.List;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 
-import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstore.loja.models.CarrinhoCompra;
-import br.com.xstore.loja.models.CarrinhoItem;
-import br.com.xstore.loja.models.Livro;
+import br.com.casadocodigo.loja.daos.LivroDao;
+import br.com.casadocodigo.loja.models.CarrinhoCompra;
+import br.com.casadocodigo.loja.models.CarrinhoItem;
+import br.com.casadocodigo.loja.models.Livro;
 
 @Model
 public class CarrinhoComprasBean {
