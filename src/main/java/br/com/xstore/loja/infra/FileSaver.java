@@ -14,7 +14,7 @@ import javax.servlet.http.Part;
 
 public class FileSaver {
 
-	public static final String SERVER_PATH = "/xstore";
+	public static final String SERVER_PATH = "/xstore
 	
 	public String write(Part arquivo, String path) {
 		String relativePath = path + "/" + arquivo.getSubmittedFileName();
