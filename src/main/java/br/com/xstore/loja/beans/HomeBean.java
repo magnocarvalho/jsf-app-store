@@ -5,8 +5,8 @@ import java.util.List;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 
-import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstore.loja.models.Livro;
+import br.com.xstoredaos.LivroDao;
+import br.com.xstoremodels.Livro;
 
 @Model
 public class HomeBean {

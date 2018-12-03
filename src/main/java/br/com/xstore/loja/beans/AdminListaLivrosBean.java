@@ -6,9 +6,9 @@ import java.util.List;
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
-
-import br.com.xstore.loja.daos.LivroDao;
-import br.com.xstore.loja.models.Livro;
+xstore
+import br.com.xstoreivroDao;
+import br.com.xstoremodels.Livro;
 
 @Model
 public class AdminListaLivrosBean {

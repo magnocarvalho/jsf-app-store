@@ -5,7 +5,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-import br.com.xstore.loja.models.Autor;
+import br.com.xstore.Autor;
 
 @FacesConverter("autorConverter")
 public class AutorConverter implements Converter {
