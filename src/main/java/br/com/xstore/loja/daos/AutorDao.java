@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import br.com.xstoremodels.Autor;
+import br.com.xstore.loja.models.Autor;
 
 public class AutorDao {
 
@@ -19,9 +19,3 @@ public class AutorDao {
 	}
 	
 }
-
-
-
-
-
-

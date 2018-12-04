@@ -1,10 +1,9 @@
 package br.com.xstore.loja.beans;
 
+import br.com.xstore.loja.daos.LivroDao;
 import javax.ejb.Stateful;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
-xstore
-import br.com.xstoredaos.LivroDao;
 import br.com.xstore.loja.models.Livro;
 
 @Model

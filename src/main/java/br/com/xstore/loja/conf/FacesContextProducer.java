@@ -1,4 +1,4 @@
-package br.com.casadocodigo.loja.conf;
+package br.com.xstore.loja.conf;
 
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;

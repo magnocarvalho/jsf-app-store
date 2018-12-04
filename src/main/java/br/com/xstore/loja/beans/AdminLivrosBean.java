@@ -10,11 +10,11 @@ import javax.inject.Named;
 import javax.servlet.http.Part;
 import javax.transaction.Transactional;
 
-import br.com.xstoredaos.AutorDao;
-import br.com.xstoredaos.LivroDao;
-import br.com.xstoreinfra.FileSaver;
-import br.com.xstoremodels.Autor;
-import br.com.xstoremodels.Livro;
+import br.com.xstore.loja.daos.AutorDao;
+import br.com.xstore.loja.daos.LivroDao;
+import br.com.xstore.loja.infra.FileSaver;
+import br.com.xstore.loja.models.Autor;
+import br.com.xstore.loja.models.Livro;
 
 @Named
 @RequestScoped
@@ -33,7 +33,7 @@ public class AdminLivrosBean {
 	
 	@Transactional
 	public String salvar() {
-		FileSaver fileSaver = new FileSaver();
+		          FileSaver fileSaver = new FileSaver();
 		String capaPath = fileSaver.write(capaLivro, "livros");
 		livro.setCapaPath(capaPath);
 		dao.salvar(livro);
