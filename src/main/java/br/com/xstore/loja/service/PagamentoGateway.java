@@ -10,11 +10,11 @@ import javax.ws.rs.client.Entity;
 import br.com.xstore.loja.models.Pagamento;
 
 public class PagamentoGateway implements Serializable {
-	
+
 	private static final long serialVersionUID = 5673439219534870862L;
 
 	public String pagar(BigDecimal total) {
-		
+
 		Client client = ClientBuilder.newClient();
 		Pagamento pagamento = new Pagamento(total);
 		String target = "http://book-payment.herokuapp.com/payment";
