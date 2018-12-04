@@ -1,3 +1,0 @@
-# XStore app
-
-Aplicação Web
